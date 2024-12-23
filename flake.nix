@@ -29,7 +29,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-runtime-def/secrets/0.0.6";
+      url = "github:pythoneda-runtime-def/secrets/0.0.8";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.flake-utils.follows = "flake-utils";
@@ -41,7 +41,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.107";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.108";
     };
     pythoneda-shared-pythonlang-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -50,7 +50,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.82";
+      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.83";
     };
     pythoneda-shared-runtime-secrets-events = {
       inputs.flake-utils.follows = "flake-utils";
@@ -60,7 +60,7 @@
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
       url =
-        "github:pythoneda-shared-runtime-def/secrets-events/0.0.8";
+        "github:pythoneda-shared-runtime-def/secrets-events/0.0.9";
     };
     pythoneda-shared-runtime-secrets-events-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -72,7 +72,7 @@
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
       url =
-        "github:pythoneda-shared-runtime-def/secrets-events-infrastructure/0.0.7";
+        "github:pythoneda-shared-runtime-def/secrets-events-infrastructure/0.0.8";
     };
   };
   outputs = inputs:
@@ -81,8 +81,8 @@
       let
         org = "pythoneda-runtime";
         repo = "secrets-infrastructure";
-        version = "0.0.3";
-        sha256 = "0xn2mxyn939jlk47m8w59szy9hicjdlhjps88qsk44i7vhxcfkxy";
+        version = "0.0.4";
+        sha256 = "1qrfc6cyb973fj60gblzn8ncpc9pzrd9cdyb6632zrcxyby66j58";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.runtime.secrets.infrastructure";
         package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
