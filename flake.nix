@@ -29,19 +29,19 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-runtime-def/secrets/0.0.10";
+      url = "github:pythoneda-runtime-def/secrets/0.0.12";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.74";
+      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.78";
     };
     pythoneda-shared-pythonlang-domain = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.110";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.113";
     };
     pythoneda-shared-pythonlang-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -50,7 +50,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.85";
+      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.89";
     };
     pythoneda-shared-runtime-secrets-events = {
       inputs.flake-utils.follows = "flake-utils";
@@ -60,7 +60,7 @@
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
       url =
-        "github:pythoneda-shared-runtime-def/secrets-events/0.0.11";
+        "github:pythoneda-shared-runtime-def/secrets-events/0.0.13";
     };
     pythoneda-shared-runtime-secrets-events-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -72,7 +72,7 @@
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
       url =
-        "github:pythoneda-shared-runtime-def/secrets-events-infrastructure/0.0.10";
+        "github:pythoneda-shared-runtime-def/secrets-events-infrastructure/0.0.12";
     };
   };
   outputs = inputs:
